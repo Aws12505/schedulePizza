@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('emp_id');
+            $table->string('emp_id')->nullable();
             $table->date('hired_date')->nullable();
             $table->decimal('hourly_pay', 8, 2)->nullable();
             $table->decimal('hourly_perf_pay', 8, 2)->nullable();
