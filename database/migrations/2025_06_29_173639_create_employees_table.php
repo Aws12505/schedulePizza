@@ -22,7 +22,7 @@ return new class extends Migration
             $table->boolean('family')->default(false);
             $table->boolean('car')->default(false);
             $table->date('dob')->nullable();
-    
+            $table->string('store')->nullable();
             // Each day has: VCI (bool), IN (time), OUT (time)
             foreach (['tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'monday'] as $day) {
                 $table->boolean("{$day}_vci")->default(false);

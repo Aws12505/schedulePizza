@@ -23,7 +23,7 @@ class EmployeeController extends Controller
                 'family' => $data['family'] ?? false,
                 'car' => $data['car'] ?? false,
                 'dob' => $data['dob'] ?? null,
-
+                'store' => $data['store']?? null,
                 'tuesday_vci' => $data['tuesday']['vci'] ?? false,
                 'tuesday_in' => $this->convertTo24Hour($data['tuesday']['in'] ?? null),
                 'tuesday_out' => $this->convertTo24Hour($data['tuesday']['out'] ?? null),
